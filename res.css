@@ -1,0 +1,90 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+}
+
+body{
+      width: 100px;
+      height: 10opx;
+      /* background-image: url("lion.jpg"); */
+      background-size: cover;
+      /* background-position: d; */
+      background-repeat: no-repeat;
+      object-fit: contain;
+      background-color: #233;
+
+}
+
+.menubar{
+      /* background-color: #fff; */
+      text-align: center;
+}
+ ul{
+      color: wheat;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+ }
+
+ li{
+      list-style: none;
+      /* text-decoration: none; */
+      width: 120px;
+      height: 15px;
+      padding: 15px;
+      padding-bottom: 35px;
+      margin: 8px;
+ }
+ a{
+      text-decoration: none;
+       color: white;
+ }
+ .active ,li:hover{
+      background-color: #783456;
+      border-radius: 10px;
+ }
+ .icon{
+      margin-right: 5px;
+ }
+
+ .submenu{
+      display: none;
+ }
+
+ li:hover .submenu{
+      display: block;
+      position: absolute;
+      background-color: #783456;
+      margin: 5px -2px 0 -15px;
+ }
+
+ .submenu ul{
+      display: block;
+      margin: 10px;
+ }
+
+ .submenu ul li{
+      width: 84px;
+      height: auto;
+      padding: 10px;
+      border-bottom: 1px dotted;
+      background-color: transparent;
+ }
+
+ li:hover .submenu ul li:last-child{
+      border-bottom: none;
+ }
+
+ li:hover .submenu li a:hover{
+      color: rgba(197, 69, 69, 0.589);
+ }
+
+ @media(max-width: 789px){
+      .menubar ul li{
+            display: block;
+            align-items: center;
+            justify-content: center;
+      }
+ }
